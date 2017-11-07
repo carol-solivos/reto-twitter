@@ -3,29 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>twitter</title>
+	<!-- css -->
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 </head>
 <body>
+	<!-- cabecera, logo e ícono -->
 	<header>
 		<nav>
+			<i class="fa fa-twitter"></i>
 			<h1>Twitter</h1>
 		</nav>
 	</header>
+	<!-- seccion 1 dos columnas. Introducción y comentario -->
 	<section>
 		<div class="intro">
 			<h2>Reto de Código</h2>
-			<p>Hola,<br>soy front-end developer jr.</p> <p>código</p>
+			<p>Hola,<br>soy front-end developer jr.</p>
+			<hr>
+			<h4>Código</h4>
 		</div>
+		<!-- textarea para ingresar comentario -->
 		<div id="writeComment">
-			<textarea  id="comentario" placeholder="¿Qué estás pensando?"></textarea>
-			<button id="btn" class="btn" >Tweet</button>
-			 
+			<textarea onkeyup="textCounter(this,'contando',120)" onkeydown="textCounter(this,'contando',120)" id="comentario" placeholder="¿Qué estás pensando?"></textarea>
+			<!-- boton para twittear -->
+			<button id="btn" class="btn" disabled>Tweet</button>
+			<!-- contador -->
+			 <input type="text" id='contando' name="contando" size="3" maxlength="3" value="120" /></i>
 		</div>
 	</section>
+	<!--seccion 2 para mostrar el comentario ingresado -->
 	<section>
 		<div id="putComment"></div>
 	</section>
+	<!-- scripts fontawesome y JS -->
 	<script src="https://use.fontawesome.com/5fc8b62c16.js"></script>
 	<script src="assets/js/app.js"></script>
 </body>
