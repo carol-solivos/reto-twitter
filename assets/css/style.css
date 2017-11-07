@@ -1,0 +1,52 @@
+body {
+	font-family: 'Lato';
+	background-image: url(../img/fondo-twitter.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	margin: auto;
+}
+
+h1 {
+	font-size: 30px;
+	margin: 10px auto;
+}
+
+section {
+	margin: 10px 5%;
+}
+
+nav {
+	background: #0DA5BC;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+.intro, #writeComment {
+	display: inline-block;
+	background: white;
+	width: 38%;
+	margin: 2%;
+	vertical-align: top;
+	padding: 20px 30px;
+}
+
+.intro {
+	
+}
+
+#writeComment {
+	
+}
+
+
+textarea {
+	min-height: 200px;
+	width: 100%;
+}
+
+#putComment div{
+	background-color: #fff;
+	padding: 20px;
+	margin: 10px;
+}
