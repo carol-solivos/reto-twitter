@@ -29,7 +29,7 @@ function newComment(){
 
 }
 
-
+// funcion contador con alertas de color
 function textCounter(field, cnt, maxlimit) {       
 	var cntfield = document.getElementById(cnt);
 	cntfield.value = maxlimit - field.value.length;
@@ -37,17 +37,18 @@ function textCounter(field, cnt, maxlimit) {
 		boton.disabled = false;
 		cntfield.style.color = '#0DA5BC';
 	}
-
 	if (field.value.length >= 120 && field.value.length < 130 ) {
 		cntfield.style.color = 'purple';
 	}
 	if (field.value.length >= 130) {
 		cntfield.style.color = 'red';
 	}
-
 	if (field.value.length > 140) {
 		boton.disabled = true;
 		cntfield.style.color = 'red';
+	}
+	if (field.value.length == 0) {
+		boton.disabled = true;
 	}
 
 		
