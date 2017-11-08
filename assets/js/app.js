@@ -31,12 +31,24 @@ function newComment(){
 
 
 function textCounter(field, cnt, maxlimit) {       
-	var cntfield = document.getElementById(cnt)   
-	if (field.value.length > maxlimit)
-    field.value = field.value.substring(0, maxlimit);
-	else
-    cntfield.value = maxlimit - field.value.length;
-	if (cntfield.value.length < 120){
+	var cntfield = document.getElementById(cnt);
+	cntfield.value = maxlimit - field.value.length;
+	if (cntfield.value.length < 140){
 		boton.disabled = false;
+		cntfield.style.color = '#0DA5BC';
 	}
+
+	if (field.value.length >= 120 && field.value.length < 130 ) {
+		cntfield.style.color = 'purple';
+	}
+	if (field.value.length >= 130) {
+		cntfield.style.color = 'red';
+	}
+
+	if (field.value.length > 140) {
+		boton.disabled = true;
+		cntfield.style.color = 'red';
+	}
+
+		
 };
