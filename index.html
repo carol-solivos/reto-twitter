@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png" type="image/x-icon">
 </head>
 <body>
 	<!-- cabecera, logo e ícono -->
@@ -26,11 +28,11 @@
 		</div>
 		<!-- textarea para ingresar comentario -->
 		<div id="writeComment">
-			<textarea onkeyup="textCounter(this,'contando',140)" onkeydown="textCounter(this,'contando',140)" id="comentario" placeholder="¿Qué estás pensando?"></textarea>
+			<textarea class="area" id="comentario" placeholder="¿Qué estás pensando?"></textarea>
 			<!-- boton para twittear -->
 			<button id="btn" class="btn" disabled>Tweet</button>
 			<!-- contador -->
-			 <input type="text" id='contando' name="contando" size="3" maxlength="3" value="140" /></i>
+			<div id="contando">140</div>
 		</div>
 	</section>
 	<!--seccion 2 para mostrar el comentario ingresado -->
